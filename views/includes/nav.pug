@@ -1,0 +1,11 @@
+nav
+  ul
+    li: a(href='/' + lang) #{ translations[lang].home }
+    li: a(href='/' + lang + '/about') #{ translations[lang].about }
+  p
+    a(href='/fi' + url_suffix) fi
+    |  | 
+    a(href='/en' + url_suffix) en
+    |  | 
+    a(href='/jp' + url_suffix) 日本語
+  hr
