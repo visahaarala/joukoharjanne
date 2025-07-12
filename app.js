@@ -32,8 +32,9 @@ app.set('views', './views');
 // home
 app.get('/:lang', (req, res) => {
 
-  const lang = req.params.lang;
-  res.send('joukoharjanne.com ' + lang);
+  // const lang = req.params.lang;
+  // res.send('joukoharjanne.com ' + lang);
+  res.render('test');
   // if (!translations[lang]) return res.redirect('/en');
   // res.render('index', {
   //   lang,
