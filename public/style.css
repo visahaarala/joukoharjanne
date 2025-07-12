@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  font-size: 1rem;
   max-width: 50rem;
   background-color: #fff;
   line-height: 1.5;
@@ -28,17 +27,22 @@ header {
 
   nav {
     position: absolute;
+    right: 0;
     top: 0;
     @media (min-width: 42em) {
       top: 1.5rem;
     }
-    right: 0;
+
     display: flex;
     align-items: center;
     a {
+      /* try display block for Mizu */
+      display: block;
       letter-spacing: 0.08rem;
     }
     span {
+      /* try display block for Mizu */
+      display: block;
       margin: 0 0.5rem;
       height: 1.1rem;
       width: 1px;
