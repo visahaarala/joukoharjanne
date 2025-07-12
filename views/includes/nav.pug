@@ -1,8 +1,0 @@
-nav
-  ul
-    li: a(href='/' + lang) #{ translation.home.title }
-    li: a(href='/' + lang + '/about') #{ translation.about.title }
-  p
-    each lang in languages
-      a(href=`/${lang}/${pageName}`) #{ lang }
-  hr

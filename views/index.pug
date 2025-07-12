@@ -1,6 +1,46 @@
-extends layout
+doctype html
+html(lang=lang)
+  head
+    meta(charset='UTF-8')
+    title= title
+  body
+    nav
+      p
+        a(href='/fi') fi
+        |  | 
+        a(href='/en') en
+        |  | 
+        a(href='/jp') 日本語
+    hr
+    h1 Jouko Harjanne
+    h4 Trumpet music straight from the heart
 
-block content
-  h1 #{ translation.home.heading }
-  each p in translation.home.paragraphs
-    p= p
+    each paragraph in biography[lang]
+      p= paragraph
+
+    h2 Links
+    p
+      a(href="https://www.facebook.com/JoukoHarjanneTrumpet/") Facebook
+    p
+      a(href="https://www.instagram.com/harjannetrumpet/") Instagram
+    p
+      a(href="https://www.lieksabrass.com/") Lieksa Brass Week
+
+    h2 Order
+    p Jouko Harjanne is available for the masters courses and soloist work as well as interesting chamber music programmes.
+    p joukotrumpet(at)gmail.com
+
+    h2 Bookings
+    p 
+      strong Tokyo Concerts, inc.
+      br
+      | 6F Belx Shinjuku Bldg. II, 23 Aizumi-cho, Shinjuku-ku, Tokyo 160-0005, Japan
+      br
+      | Tel: +81-3-3226-9755
+      br
+      | Fax: +81-3-3226-9882
+    p 
+      | E-mail: 
+      a(href="mailto:info@tokyo-concerts.co.jp") info@tokyo-concerts.co.jp
+    p 
+      a(href="http://www.tokyo-concerts.co.jp/") http://www.tokyo-concerts.co.jp/
