@@ -8,6 +8,9 @@ const biography = require('./biography');
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, '/views'));
 
+// styles.css
+app.use(express.static(path.join(__dirname, 'public')));
+
 // finnish
 app.get('/', (req, res) => {
   res.render('index', {
