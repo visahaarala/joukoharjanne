@@ -1,11 +1,12 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
 const biography = require('./biography');
 
 app.set('view engine', 'pug');
-app.set('views', './views');
+app.set('views', path.join(__dirname, '/views'));
 
 // home
 app.get('/:lang', (req, res) => {
