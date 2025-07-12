@@ -31,14 +31,16 @@ app.set('views', './views');
 
 // home
 app.get('/:lang', (req, res) => {
+
   const lang = req.params.lang;
-  if (!translations[lang]) return res.redirect('/en');
-  res.render('index', {
-    lang,
-    title: translations[lang].home,
-    translations,
-    url_suffix: '',
-  });
+  res.send('joukoharjanne.com ' + lang);
+  // if (!translations[lang]) return res.redirect('/en');
+  // res.render('index', {
+  //   lang,
+  //   title: translations[lang].home,
+  //   translations,
+  //   url_suffix: '',
+  // });
 });
 
 // about
