@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const PORT = 3000;
 
@@ -27,11 +28,10 @@ const translations = {
 };
 
 app.set('view engine', 'pug');
-app.set('views', './views');
+app.set('views', path.join(__dirname, './views'));
 
 // home
 app.get('/:lang', (req, res) => {
-
   // const lang = req.params.lang;
   // res.send('joukoharjanne.com ' + lang);
   res.render('test');
@@ -60,6 +60,8 @@ app.get('/:lang/about', (req, res) => {
 app.get('/', (req, res) => res.redirect('/en'));
 
 // 404 simple handler
-app.use((req, res) => res.status(404).send('joukoharjanne.com --- 404 not found'));
+app.use((req, res) =>
+  res.status(404).send('joukoharjanne.com --- 404 not found')
+);
 
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
