@@ -32,16 +32,14 @@ app.set('views', path.join(__dirname, './views'));
 
 // home
 app.get('/:lang', (req, res) => {
-  // const lang = req.params.lang;
-  // res.send('joukoharjanne.com ' + lang);
-  res.render('test');
-  // if (!translations[lang]) return res.redirect('/en');
-  // res.render('index', {
-  //   lang,
-  //   title: translations[lang].home,
-  //   translations,
-  //   url_suffix: '',
-  // });
+  const lang = req.params.lang;
+  if (!translations[lang]) return res.redirect('/en');
+  res.render('index', {
+    lang,
+    title: translations[lang].home,
+    translations,
+    url_suffix: '',
+  });
 });
 
 // about
