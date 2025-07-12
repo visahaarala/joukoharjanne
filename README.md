@@ -1,6 +1,6 @@
 # joukoharjanne.com
 
-Pure HTML & CSS website. No extra fuss.
+Simple HTML & CSS website.
 
 Written with node, express and pug templates.
 
