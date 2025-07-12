@@ -1,11 +1,8 @@
 nav
   ul
-    li: a(href='/' + lang) #{ translations[lang].home }
-    li: a(href='/' + lang + '/about') #{ translations[lang].about }
+    li: a(href='/' + lang) #{ translation.home.title }
+    li: a(href='/' + lang + '/about') #{ translation.about.title }
   p
-    a(href='/fi' + url_suffix) fi
-    |  | 
-    a(href='/en' + url_suffix) en
-    |  | 
-    a(href='/jp' + url_suffix) 日本語
+    each lang in languages
+      a(href=`/${lang}/${pageName}`) #{ lang }
   hr

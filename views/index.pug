@@ -1,5 +1,6 @@
 extends layout
 
 block content
-  h1 #{ translations[lang].welcome }
-  p #{ translations[lang].intro }
+  h1 #{ translation.home.heading }
+  each p in translation.home.paragraphs
+    p= p
