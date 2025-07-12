@@ -16,7 +16,7 @@ body {
   max-width: 50rem;
   background-color: #fff;
   line-height: 1.4;
-  padding: 2rem min(2rem, 5vw);
+  padding: min(3rem, 8vw) min(3rem, 5vw) 2rem;
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
   font-family: Helvetica, 'Trebuchet MS', Verdana, sans-serif;
 }
@@ -24,9 +24,9 @@ body {
 header {
   nav {
     text-align: right;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     @media (min-width: 44em) {
-      margin-bottom: -1.5rem;
+      margin-bottom: -1rem;
     }
   }
 }
@@ -40,11 +40,16 @@ section {
 h1 {
   /* title */
   text-align: center;
+  letter-spacing: 0.05rem;
 }
 
 h4 {
   /* subtitle */
   text-align: center;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
 }
 
 h2 {
@@ -58,6 +63,6 @@ p:not(:first-child) {
 }
 
 a {
-  color: #239;
+  color: #34b;
   letter-spacing: 0.05rem;
 }
