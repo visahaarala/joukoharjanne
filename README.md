@@ -1,7 +1,7 @@
 # joukoharjanne.com
 
-Pure html & css site. 
+Pure HTML & CSS website. No extra fuss.
 
 Written with node, express and pug templates.
 
-Hosted at Vercel.
+Hosted on Vercel.
