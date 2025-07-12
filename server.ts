@@ -1,37 +1,17 @@
+import { Request, Response } from 'express';
+
 const express = require('express');
 const path = require('path');
 const app = express();
 const PORT = 3000;
 
-const translations = {
-  en: {
-    home: 'Home',
-    about: 'About',
-    welcome: 'Welcome to the site!',
-    intro: 'This is a simple multilingual site example.',
-    about_msg: 'We are an example website.',
-  },
-  fi: {
-    home: 'Etusivu',
-    about: 'Tietoa',
-    welcome: 'Tervetuloa sivustolle!',
-    intro: 'Tämä on yksinkertainen monikielinen sivusto.',
-    about_msg: 'Olemme esimerkkisivusto.',
-  },
-  jp: {
-    home: 'ホーム',
-    about: '紹介',
-    welcome: 'サイトへようこそ！',
-    intro: 'これは簡単な多言語サイトの例です。',
-    about_msg: '私たちは例のウェブサイトです。',
-  },
-};
-
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, './views'));
 
+const translations = require('./translations');
+
 // home
-app.get('/:lang', (req, res) => {
+app.get('/:lang', (req: Request, res: Response) => {
   const lang = req.params.lang;
   if (!translations[lang]) return res.redirect('/en');
   res.render('index', {
@@ -43,7 +23,7 @@ app.get('/:lang', (req, res) => {
 });
 
 // about
-app.get('/:lang/about', (req, res) => {
+app.get('/:lang/about', (req: Request, res: Response) => {
   const lang = req.params.lang;
   if (!translations[lang]) return res.redirect('/en/about');
   res.render('about', {
@@ -55,10 +35,10 @@ app.get('/:lang/about', (req, res) => {
 });
 
 // redirect root to english
-app.get('/', (req, res) => res.redirect('/en'));
+app.get('/', (req: Request, res: Response) => res.redirect('/en'));
 
 // 404 simple handler
-app.use((req, res) =>
+app.use((req: Request, res: Response) =>
   res.status(404).send('joukoharjanne.com --- 404 not found')
 );
 
