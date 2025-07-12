@@ -80,7 +80,9 @@ h3 {
 }
 
 p {
-  text-align: justify;
+  @media (min-width: 33em) {
+    text-align: justify;
+  }
   font-size: 1rem;
 }
 
