@@ -8,20 +8,25 @@ const biography = require('./biography');
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, '/views'));
 
-// home
+// finnish
+app.get('/', (req, res) => {
+  res.render('index', {
+    lang: 'fi',
+    biography,
+  });
+});
+
+// other languages
 app.get('/:lang', (req, res) => {
   const lang = req.params.lang;
-  if (!biography[lang]) return res.redirect('/en');
+  if (!biography[lang]) return res.redirect('/');
   res.render('index', {
     lang,
     biography,
   });
 });
 
-// redirect root to english
-app.get('/', (req, res) => res.redirect('/en'));
-
-// 404 simple handler
-app.use((req, res) => res.status(404).send('Not found'));
+// redirect everything else to finnish
+app.use((req, res) => res.redirect('/'));
 
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
