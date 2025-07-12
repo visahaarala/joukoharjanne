@@ -11,10 +11,10 @@ app.set('views', path.join(__dirname, '/views'));
 // styles.css
 app.use(express.static(path.join(__dirname, 'public')));
 
-// finnish
+// english at root
 app.get('/', (req, res) => {
   res.render('index', {
-    lang: 'fi',
+    lang: 'en',
     biography,
   });
 });
@@ -29,7 +29,7 @@ app.get('/:lang', (req, res) => {
   });
 });
 
-// redirect everything else to finnish
+// redirect everything else to /
 app.use((req, res) => res.redirect('/'));
 
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
