@@ -29,34 +29,36 @@ const translations = {
 app.set('view engine', 'pug');
 app.set('views', './views');
 
-// home
-app.get('/:lang', (req, res) => {
-  const lang = req.params.lang;
-  if (!translations[lang]) return res.redirect('/en');
-  res.render('index', {
-    lang,
-    title: translations[lang].home,
-    translations,
-    url_suffix: '',
-  });
-});
+// // home
+// app.get('/:lang', (req, res) => {
+//   const lang = req.params.lang;
+//   if (!translations[lang]) return res.redirect('/en');
+//   res.render('index', {
+//     lang,
+//     title: translations[lang].home,
+//     translations,
+//     url_suffix: '',
+//   });
+// });
 
-// about
-app.get('/:lang/about', (req, res) => {
-  const lang = req.params.lang;
-  if (!translations[lang]) return res.redirect('/en/about');
-  res.render('about', {
-    lang,
-    title: translations[lang].about,
-    translations,
-    url_suffix: '/about',
-  });
-});
+// // about
+// app.get('/:lang/about', (req, res) => {
+//   const lang = req.params.lang;
+//   if (!translations[lang]) return res.redirect('/en/about');
+//   res.render('about', {
+//     lang,
+//     title: translations[lang].about,
+//     translations,
+//     url_suffix: '/about',
+//   });
+// });
 
-// redirect root to english
-app.get('/', (req, res) => res.redirect('/en'));
+// // redirect root to english
+// app.get('/', (req, res) => res.redirect('/en'));
+
+app.get('/', (req, res) => res.send('joukoharjanne.com website'));
 
 // 404 simple handler
-app.use((req, res) => res.status(404).send('Not found'));
+app.use((req, res) => res.status(404).send('joukoharjanne.com --- 404 not found'));
 
 app.listen(PORT, console.log(`Server running on port ${PORT}`));
