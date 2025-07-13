@@ -63,7 +63,7 @@ section {
 h1 {
   /* title */
   margin-top: 2.7rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.04rem;
   font-weight: 600;
 }
 
@@ -76,10 +76,8 @@ h2 {
     margin-bottom: 1.2rem;
   }
 
-  
-  font-weight: 300;
   font-weight: 400;
-  color: #000a;
+  color: #000b;
 
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
@@ -96,8 +94,9 @@ h2 {
 h3 {
   /* section title */
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.8rem;
+  letter-spacing: 0.03rem;
 }
 
 p {
@@ -109,6 +108,11 @@ p {
 
 p:not(:first-child) {
   margin-top: 1rem;
+}
+
+strong {
+  font-weight: 600;
+  letter-spacing: 0.03rem;
 }
 
 a {
