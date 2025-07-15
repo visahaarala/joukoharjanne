@@ -15,7 +15,6 @@ html {
 body {
   max-width: 50rem;
   background-color: #fdfdfd;
-  background-color: #fea; /* DEV BRANCH TESTING */
   line-height: 1.5;
   padding: 1.5rem min(3rem, 6vw) 3rem;
 
@@ -63,7 +62,10 @@ section {
 
 h1 {
   /* title */
-  margin-top: 3.2rem;
+  margin-top: 2.9rem;
+  @media (min-width: 42em) {
+    margin-top: 3.2rem;
+  }
   letter-spacing: 0.04rem;
   font-weight: 600;
 }
