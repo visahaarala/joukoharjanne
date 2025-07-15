@@ -15,6 +15,7 @@ html {
 body {
   max-width: 50rem;
   background-color: #fdfdfd;
+  background-color: #fea;
   line-height: 1.5;
   padding: 1.5rem min(3rem, 6vw) 3rem;
 
