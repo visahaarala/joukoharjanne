@@ -15,6 +15,8 @@ module.exports = {
       'Harjanne has made over 35 (39) solo recordings. In addition to recording the standard repertoire, Harjanne has gained a reputation for the recording of what are considered the trumpet’s most difficult works (e.g. the Zimmermann, Gruner, Nagao, Schedrin and Jolivet concertos). In addition to his recordings, he has performed in numerous productions for radio and TV.',
 
       'Jouko Harjanne has held a number of master classes in Finland and abroad. During years 2012-2020 Harjanne was appointed as a Guest Professor of the Senzoku Gakuen College of Music. In 2012 he was nominated as a Brass Ambassador of the Lieksa city.',
+
+      'Jouko Harjanne plays on Bach Bb and C trumpets.',
     ],
   },
   fi: {
@@ -33,6 +35,8 @@ module.exports = {
       'Harjanne pitää säännöllisesti mestarikursseja ympäri maailmaa.',
 
       'Jouko Harjanne on toiminut Lieksan Vaskiviikon Taiteellisena johtajana vuodesta 1997 ja hänet on nimitetty myös Lieksan kaupungin Vaskilähettilääksi vuonna 2012. Tammikuusta 2012 vuoteen 2020 Harjanne toimi Senzoku Gakuen College of Musicin vierailevana trumpettiprofessorina.',
+
+      'Jouko Harjanne soittaa Bach Bb ja C trumpetteja.',
     ],
   },
   jp: {
