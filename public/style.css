@@ -58,12 +58,9 @@ section {
   margin-top: 2.4rem;
   padding-top: 1.8rem;
   border-top: 1px solid #0005;
-  /* display: flex; */
 }
 
 .bio img {
-  /* max-width: 40%;
-  min-width: 15rem; */
   width: 20rem;
   max-width: 60%;
   float: right;
@@ -76,6 +73,17 @@ section {
     max-width: unset;
     width: 100%;
   }
+}
+
+.bookings {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookings img {
+  align-self: center;
+  margin-top: 2rem;
+  width: 5rem;
 }
 
 h1 {
