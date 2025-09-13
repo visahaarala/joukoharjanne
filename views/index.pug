@@ -25,8 +25,11 @@ html(lang=lang)
       h2 Trumpet music straight from the heart
 
     main
-      section
-        each paragraph in biography[lang]
+      section.bio
+        each paragraph in biography[lang]['intro']
+          p= paragraph
+        img(src="/jouko_w480.jpg" alt="Jouko")
+        each paragraph in biography[lang]['bio']
           p= paragraph
 
       section
