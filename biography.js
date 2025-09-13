@@ -16,7 +16,7 @@ module.exports = {
 
       'Jouko Harjanne has held a number of master classes in Finland and abroad. During years 2012-2020 Harjanne was appointed as a Guest Professor of the Senzoku Gakuen College of Music. In 2012 he was nominated as a Brass Ambassador of the Lieksa city.',
 
-      'Jouko Harjanne plays on Bach Bb and C trumpets.',
+      'Jouko Harjanne plays Bach Bb and C trumpets.',
     ],
   },
   fi: {
