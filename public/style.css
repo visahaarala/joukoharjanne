@@ -80,9 +80,15 @@ section {
   flex-direction: column;
 }
 
-.bookings img {
+.bookings .logos {
   align-self: center;
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bookings .logos img {
   width: 5rem;
 }
 
