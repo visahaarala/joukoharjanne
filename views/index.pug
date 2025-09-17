@@ -28,7 +28,9 @@ html(lang=lang)
       section.bio
         each paragraph in biography[lang]['intro']
           p= paragraph
-        img(src="/jouko_w480.jpg" alt="Jouko")
+        .jouko 
+          img(src="/jouko.jpg" alt="Jouko")
+          small ©illukoo
         each paragraph in biography[lang]['bio']
           p= paragraph
 
@@ -63,5 +65,3 @@ html(lang=lang)
           a(href="http://www.tokyo-concerts.co.jp/") http://www.tokyo-concerts.co.jp/
         .logos
           img(src="/bach.png" alt="Bach logo")
-          img(src="/bach-gold.jpeg" alt="Bach logo")
-          img(src="/bach-blackwhite.jpeg" alt="Bach logo")
