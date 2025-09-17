@@ -1,4 +1,10 @@
-/* joukoharjanne.com created by Visa Haarala */
+/* 
+
+joukoharjanne.com created by Visa Haarala
+
+https://github.com/visahaarala/joukoharjanne
+
+*/
 
 * {
   margin: 0;
@@ -6,7 +12,7 @@
 }
 
 html {
-  /* disable fosi change in landscape iPhone */
+  /* disable font-size change in landscape iPhone */
   -webkit-text-size-adjust: 100%;
 
   /* background-color: #69827f; */
@@ -66,7 +72,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: end;
-  
+
   padding-top: 1.2rem;
   padding-left: 2rem;
   width: 20rem;
@@ -117,15 +123,12 @@ h1 {
 h2 {
   /* subtitle */
   margin-top: 1rem;
-
   margin-bottom: 0.6rem;
   @media (min-width: 42em) {
     margin-bottom: 1.1rem;
   }
-
   font-weight: 400;
   color: #000b;
-
   font-size: 1.1rem;
   letter-spacing: 0.05rem;
 
