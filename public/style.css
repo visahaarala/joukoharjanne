@@ -15,8 +15,7 @@ html {
   /* disable font-size change in landscape iPhone */
   -webkit-text-size-adjust: 100%;
 
-  /* background-color: #69827f; */
-  background-color: #70827f;
+  background-color: #69827f;
   display: flex;
   justify-content: center;
 }
