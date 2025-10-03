@@ -7,7 +7,7 @@
     "start": "node --watch server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Visa Haarala",
   "license": "ISC",
   "description": "",
   "dependencies": {
