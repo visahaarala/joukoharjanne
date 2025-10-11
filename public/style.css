@@ -87,6 +87,7 @@ section {
 
 .bio .jouko img {
   width: 100%;
+  aspect-ratio: 544 / 816;
 }
 
 .bio .jouko small {
