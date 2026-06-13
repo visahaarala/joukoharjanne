@@ -4,7 +4,7 @@ module.exports = {
       'Jouko Harjanne studied the trumpet with Raimo Sarmas at the Tampere Conservatoire and continued after graduating with Henri Adelbrecht and Timofei Dokshitser. Between 1978 and 1984, Harjanne was alternate lead trumpeter with the Tampere Philharmonic Orchestra. 1984 – 2024 Harjanne served as a principal trumpet of the Finnish Radio Symphony Orchestra in Helsinki.',
     ],
     bio: [
-      'Harjanne has played chamber music in many brass and chamber ensembles, including the Finnish Brass Ensemble and the Brass Septet Imperial.',
+      'Harjanne has played chamber music in many brass and chamber ensembles. Nowadays he is a member of the Kolibri Brass and the brass septet Suomi-seitsikko.',
 
       'Jouko Harjanne’s international career has been enhanced by many competition successes, the most important being second place in the Prague Spring Trumpet Series in 1987, and first place in the Ellsworth Smith Trumpet Competition, organised by the International Trumpet Guild in 1990. In 1989 he was presented with the Brass Player of the Year award at the Lieksa Brass Week, Finland’s most important brass event. Harjanne is now the artistic director of the festival. He has also been much in demand as a player in international brass events. In 1997 Jouko was nominated as an honorary member of the Finnish Trumpet Guild.',
 
@@ -24,7 +24,7 @@ module.exports = {
       'Raumalla syntynyt Jouko Harjanne opiskeli Tampereen konservatoriossa Raimo Sarmaksen johdolla ja jatkoi opintojaan opettajinaan Henri Adelbrecht ja Timofei Dokshitser. Orkesterimuusikon uransa Harjanne aloitti vuonna 1978 Tampereen kaupunginorkesterin trumpetin varaäänenjohtajana ja jatkoi samassa orkesterissa vuoteen 1984. Vuosina 1984 – 2024 Harjanne toimi RSO:n soolotrumpetistina ja trumpettiryhmän äänenjohtajana.',
     ],
     bio: [
-      'Aktiivisena kamarimuusikkona hän on soittanut useissa yhtyeissä, joista keskeisimpiä ovat olleet Suomalainen Vaskiyhtye ja Solistiseitsikko Imperial.',
+      'Aktiivisena kamarimuusikkona hän on soittanut useissa yhtyeissä. Nykyään Harjanne soittaa Kolibri Brassissa ja Suomi-seitsikossa.',
 
       'Jouko Harjanne on kansainvälisesti tunnettu ja arvostettu vaskisolisti. Maailmalla hänet luetaan aikamme trumpetistien eliittiin kuuluvaksi. Hänen solistinen uransa lähti nopeaan nousuun lukuisten kilpailumenestysten myötä. Tärkeimpiä niistä olivat toinen palkinto Prahan kevät -kilpailussa vuonna 1987 ja ensimmäinen palkinto Kansainvälisen trumpettikillan järjestämässä Ellsworth Smith -trumpettikilpailussa vuonna 1990. Harjanne on toiminut myös usean tärkeän kansainvälisen trumpettikilpailun tuomaristossa. Niistä mainittakoon mm. Munchenin ARD-kilpailu, Maurice Andre trumpettikilpailu, Prahan Kevään, Porcian (Italia), Budapestin (Unkari) sekä luonnollisesti Lieksan Vaskiviikon kansainväliset vaskikilpailut. Suomen Trumpettikillan kunniajäseneksi Harjanne kutsuttiin vuonna 1997.',
 
